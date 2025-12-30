@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --sunrise-cream: #fdfcf0;
+  --sunrise-orange: #ffd1ba;
+  --sunrise-sky: #e0f2fe;
+  --sunrise-purple: #f3e8ff;
+  --ink: #2a2a2a;
+  --ink-muted: #5f6368;
+  --glass: rgba(255, 255, 255, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.7);
+  --shadow-soft: 0 20px 50px rgba(15, 23, 42, 0.12);
+  --shadow-glow: 0 0 30px rgba(255, 209, 186, 0.5);
+}
+
+@theme inline {
+  --color-sunrise-cream: var(--sunrise-cream);
+  --color-sunrise-orange: var(--sunrise-orange);
+  --color-sunrise-sky: var(--sunrise-sky);
+  --color-sunrise-purple: var(--sunrise-purple);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-glass: var(--glass);
+  --color-glass-border: var(--glass-border);
+  --shadow-soft: var(--shadow-soft);
+  --shadow-glow: var(--shadow-glow);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 209, 186, 0.45), transparent 45%),
+    radial-gradient(circle at 80% 15%, rgba(224, 242, 254, 0.55), transparent 40%),
+    radial-gradient(circle at 65% 80%, rgba(243, 232, 255, 0.5), transparent 45%),
+    linear-gradient(180deg, #fdfcf0 0%, #f7f7f5 100%);
+  color: var(--ink);
+  font-family: var(--font-geist-sans), "Inter", "Segoe UI", system-ui, sans-serif;
+}
+
+@media print {
+  body {
+    background: #ffffff;
+  }
+
+  .print-hidden {
+    display: none !important;
+  }
+}
