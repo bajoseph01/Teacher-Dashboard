@@ -4,6 +4,14 @@ Thumbs.db
 
 # Logs
 logs/*.log
+logs/
+
+# Next.js / Node
+node_modules/
+.next/
+out/
+coverage/
+build/
 
 # Python
 __pycache__/
@@ -19,3 +27,8 @@ dist/
 # Env
 .env
 .env.*
+
+# Next.js misc
+.vercel
+*.tsbuildinfo
+next-env.d.ts

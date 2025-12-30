@@ -1,10 +1,9 @@
 # TASKS
 
 ## Now (do next)
-- [ ] Define MVP scope in `PROJECT.md`
-- [ ] Choose stack + record in `DECISIONS.md`
-- [ ] Implement first vertical slice
-- [ ] Add a basic smoke test and document it in `RUNBOOK.md`
+- [ ] Set up the "Sunrise" theme + typography in `app/globals.css` and Tailwind config
+- [ ] Build core components with placeholder data: GlassCard, WeeklySunriseView, DailyDeepFocusView, SparkPanel
+- [ ] Wire routing (`/` and `/[day]`) + global state (Zustand), add progressive disclosure and local storage
 
 ## Next
 - [ ] Add error handling + logging
